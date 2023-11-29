@@ -1,0 +1,133 @@
+
+#habilidades {
+    background-color: #111010;
+    padding: 80px 0px;
+    height: auto;
+}
+
+.habi-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    color: #ccc;
+    
+}
+
+.titulo-habilidades{
+    font-size: 2rem;
+    color: #c57e5f;
+}
+
+.conteiner-habi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 100px;
+    padding-bottom: 60px;
+    
+}
+
+.habi-box {
+    height: 106px;
+    width: 106px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+    background-color: #ccc;
+
+  }
+  
+.habi-box:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.conteiner-descricao {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    font-size: 1rem;
+    color: white;
+
+}
+
+.texto-descricao{
+  padding-top: 30px;
+  font-size: 1.4rem;
+}
+
+.ajustes2 {
+    padding: 0 150px;;
+}
+.ajustes2 h1 {
+    margin-bottom: 0;
+}
+  
+@media (max-width: 850px) {
+    #habilidades .habi-descricao .habi-box {
+      height: auto;
+      width: auto;
+    }
+    #habilidades .habi-descricao .conteiner-descricao {
+      height: 180px;
+      width: 100%;
+      max-width: 290px;
+      font-size: 1.7rem;
+      padding: 0px;
+    }
+
+  }
+  @media (max-width: 765px) {
+    #habilidades .habi-descricao {
+      gap: 10px;
+      padding: 80px 0;
+    }
+    #habilidades .habi-descricao .habi-box {
+      height: 76px;
+      width: 76px;
+      
+    }
+    #habilidades .habi-descricao .habi-descricao {
+      height: 160px;
+      max-width: 260px;
+      font-size: 1.8rem;
+      
+    }
+    .ajustes2{
+      padding: 0px;
+    }
+    
+  }
+  @media (max-width: 685px) {
+    #habilidades .habi-descricao {
+      gap: 40px;
+      flex-direction: column;
+      width: 100%;
+    }
+      
+    }
+    #habilidades .habi-box {
+      height: 86px;
+      width: 86px;
+      
+    }
+    #habilidades .conteiner-descricao {
+      max-width: 420px;
+      font-size: 1.8rem;
+      
+    }
+
+    .bootstrap{
+        width: 80px;
+    }
+
+    .conteiner-habi {
+      padding: 0;
+  }

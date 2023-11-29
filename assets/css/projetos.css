@@ -1,0 +1,102 @@
+.project-text{
+    text-align: center;
+}
+
+.project-text p{
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.project-text span{
+    color: #c57e5f;
+}   
+
+.project-text h2{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.text-card{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.1), #080808);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;    
+}
+
+.text-card h5{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text-card p{
+    color: #fff;
+    font-size: 0.7rem;
+    line-height: 1.8;
+}
+
+.text-card i{
+    color: #202020;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card:hover .text-card{
+    height: 100%;
+}
+
+@media (max-width: 1100px){
+    .project-text h2{
+        font-size: 2.5rem;
+    }
+    
+    
+    .text-card p{
+        font-size: 0.7rem;
+    }
+}

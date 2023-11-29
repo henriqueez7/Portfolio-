@@ -1,0 +1,213 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;   
+ font-family: 'Poppins', sans-serif;
+ text-decoration: none;
+ list-style: none;
+ scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1a1818;
+    color: #fff; 
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 3%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;   
+}
+
+.logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.letraUm{
+    color: #c57e5f;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+
+.menu a:hover{
+    color: #c57e5f;
+}
+
+.menu a.active{
+    color: #c57e5f;
+}
+
+#menuIcon{
+    font-size: 35px;
+    color: #fff;
+    z-index: 1001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+/* home */
+section{
+    padding: 160px 15% 120px;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5)url(../img/imgFundo3.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide{
+    margin-bottom: 20px;
+}
+
+.homeTitulo h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.meuNome2{
+    font-size: 1.4rem;
+    color:#c57e5f;
+    margin: -10px 0 0 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+    border: solid 1px #c57e5f;
+}
+
+.btn1:hover{
+    transform: scale(0.9);
+}
+
+.btn2{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: transparent;
+    border: solid 1px #c57e5f;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: all .45s ease; 
+}
+
+.btn2:hover{
+    transform: scale(0.9);
+}
+
+@media (max-width: 1480px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+}
+
+@media (max-width: 1100px){
+    .homeTitulo h1{
+        font-size: 2.5rem;
+        transition: .1s;
+    }
+
+    .meuNome2{
+        font-size: 1.1rem;
+        transition: .1s;
+    }
+
+    .btn1{
+        font-size: 0.9rem;
+        transition: .1s;
+    }
+
+    .btn2{
+        font-size: 0.9rem;
+        transition: .1s;
+    }
+}
+
+@media (max-width: 820px){
+    #menuIcon{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color:#1a1818 ;
+        text-align: left;
+        transition: all .45s ease;
+    }
+
+    .menu a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(#c57e5f);
+    }
+
+    .menu a:hover{
+        color: #c57e5f;
+    }
+
+    .menu a.active{
+        color: #fff;
+    }
+
+    .menu.open{
+        top: 100%;
+    }
+}

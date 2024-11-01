@@ -10,3 +10,4 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navMenu.classList.remove('open');
 }
+

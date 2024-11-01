@@ -4,7 +4,7 @@ const sobreHabi = [
                     '<p>HTML</p> <br> <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p> <br>',
                     '<p>CSS</p> <br> <p>É um mecanismo para adicionar estilo a um documento web.</p> <br>',
                     '<p>JavaScript</p> <br> <p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web.</p> <br>',
-                    '<p>Bootstrap</p> <br> <p>Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma..</p> <br>',
+                    '<p>React</p> <br> <p>React é uma biblioteca JavaScript. Utilizada para criar interfaces de usuário, é uma das principais ferramentas para desenvolvimento de aplicação.</p> <br>',
 ]
 const dataInicio = [
                     (new Date(2021, 10, 1)).getTime(), // 0
@@ -16,6 +16,7 @@ const dataInicio = [
                     (new Date(2021, 11, 1)).getTime(), // 6
                     (new Date(2021, 11, 1)).getTime(), // 7
                     ]
+
 const dataHoje = (new Date()).getTime();
 
 habi.forEach(  (elemento, index) => {
@@ -27,7 +28,7 @@ habi.forEach(  (elemento, index) => {
         if (tempoDeExperiencia > 1) tempo = 'meses'
         descricao.innerHTML = `<p>${sobreHabi[index1]} </p>` ;
     } )
-    elemento.addEventListener('mouseout', (evento, elemento,) => {
+    elemento.addEventListener('mouseout', (evento, elemento) => {
         descricao.innerHTML = '/* Passe o mouse por cima de alguma habilidade para ler a descrição */';
     } )
 } );

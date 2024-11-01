@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Pedro Henrique</title>
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/sobreMim.css">
     <link rel="stylesheet" href="assets/css/softSkills.css">
     <link rel="stylesheet" href="assets/css/projetos.css">
     <link rel="stylesheet" href="assets/css/contato.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <!-- fim css -->
+    <!-- js -->
+    <script src="assets/js/maquinaDeEscrever.js" defer></script>
+    <script src="assets/js/code.js" defer></script>
+    <script src="assets/js/habilidade.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+    <!-- fim js -->
+    <!-- icones e font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- fim icones e font -->
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Portfólio | Pedro Henrique</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><span class="letraUm">/*</span>Henrique<span class="letraUm">*/</span></a>
-
+        <a href="#" class="logo"><span class="caracteres">/*</span>Henrique<span class="caracteres">*/</span></a>
         <ul class="menu">
             <li><a href="#home" class="active">Inicio</a></li>
             <li><a href="#sobre">Sobre Mim</a></li>
@@ -36,7 +45,7 @@
     <section class="home" id="home">
         <div class="homeTitulo">
             <h1>Pedro Henrique</h1>
-            <h3 class="meuNome2">Desenvolvedor Front-end</h3>
+            <h3 class="subtitulo">Desenvolvedor Front-end</h3>
             <div class="button">
                 <a href="https://www.linkedin.com/in/henriqueez7/" target="_blank" class="btn1">Linkedin</a>
                 <a href="https://github.com/henriqueez7 " target="_blank" class="btn2">GitHub</a>
@@ -47,7 +56,7 @@
     <!--sobre mim-->
     <section class="sobre" id="sobre">
         <div class="sobre-img">
-            <img src="assets/img/img-sobre2.jfif" alt="imagem-sobre">
+            <img src="assets/img/imagemSobre.jpg" alt="imagem-sobre">
         </div>
 
         <div class="sobre-text">
@@ -57,58 +66,49 @@
                 Comecei em maio/2023, Com objetivo de melhorar minhas habilidades e
                 conseguir viver de programação. Estou cursando Analise e Desenvolvimento
                 de Sistemas, me encontro em constante aprendizado em desenvolvimento Web..</p>
-
         </div>
     </section>
 
     <!--Habilidades-->
-    <section id="habilidades">
-        <div class="centralizador">
-            <div class="ajustes2">
-                <h1 class="titulo-habilidades">Soft Skills</h1> 
-                <div class="habi-descricao">
-                    <div class="conteiner-habi">
-                            <div class="habi-box html-habi">
-                                <img
-                                class="icones-habilidades"
-                                src="assets/img/html.svg"
-                                alt="html-icon"
-                                />
-                            </div>
-                            <div class="habi-box css-habi">
-                                <img
-                                class="icones-habilidades"
-                                src="assets/img/css.svg"
-                                alt="css-icon"
-                                />
-                            </div>
-                            <div class="habi-box js-habi">
-                                <img
-                                class="icones-habilidades"
-                                src="assets/img/js.svg"
-                                alt="js-icon"
-                                />
-                            </div>
-                    </div>
-                            <div class="conteiner-descricao">
-                                <p class="texto-descricao">
-                                    /* Passe o mouse por cima de alguma habilidade para ler a
-                                    descrição */
-                                </p>
-                            </div>
+    <section id="softSkills"> 
+        <h1 class="tituloHabilidades">Soft Skills</h1> 
+        <div class="habilidades">
+            <div class="containerHabilidades">
+                <div class="habi-box html-habi">
+                    <img class="icones-habilidades" src="assets/img/html.svg" alt="html-icon"/>
                 </div>
+
+                <div class="habi-box css-habi">
+                    <img class="icones-habilidades" src="assets/img/css.svg" alt="css-icon"/>
+                </div>
+
+                <div class="habi-box js-habi">
+                    <img class="icones-habilidades" src="assets/img/js.svg" alt="js-icon"/>
+                </div>
+
+                <div class="habi-box react-habi">
+                    <img class="icones-habilidades" src="assets/img/react.svg" alt="js-icon"/>
+                </div>
+                
+            </div>
+
+            <div class="descricao">
+                <p class="texto-descricao">
+                    /* Passe o mouse por cima de alguma habilidade para ler a
+                    descrição */
+                </p>
             </div>
         </div>
     </section>
 
     <!--Projetos-->
     <section class="portfolio" id="portfolio">
-        <div class="project-text">
+        <div class="projetoTitulo">
             <p>Projetos</p>
             <h2><span>Ultimos</span> Projetos</h2>
         </div>
 
-        <div class="portfolio-content">
+        <div class="portfolioContainer">
             <div class="card">
                 <img src="assets/img/milesMorales.PNG" alt="projeto-miles-morales">
                 <div class="text-card">
@@ -129,11 +129,21 @@
             </div>
 
             <div class="card">
-                <img src="assets/img/CalculadoraImc.PNG" alt="projeto-Calculadora-Imc">
+                <img src="assets/img/CardapioJunina.png" alt="projeto-cardapio-festa-Junina">
                 <div class="text-card">
-                    <h5>Calculadora Imc</h5>
-                        <p>Realizei um desafio que era criar uma calculadora-imc, nesse projeto utilizei html,css e js</p>
-                       <a href="https://calculadora-imc-nine-mauve.vercel.app/" target="_blank"><i class="bx bx-link-external '"></i></a>
+                    <h5>Cardápio de Comidas de Festa Junina</h5>
+                        <p>Cardápio desenvolvido em React, com o objetivo de agilizar as filas para compra de fichas dos lanches.
+                        </p>
+                       <a href="https://cardapio-festa-junina.vercel.app/" target="_blank"><i class="bx bx-link-external '"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/img/telaLogin.png" alt="projeto-Relogio-Digital">
+                <div class="text-card">
+                    <h5>Tela de login</h5>
+                    <p>Tela de login criada para um grupo que participei na faculdade, nela foi usada html e css </p>
+                       <a href="https://otd-formulario.vercel.app/" target="_blank"><i class="bx bx-link-external '"></i></a>
                 </div>
             </div>
         </div>
@@ -166,13 +176,5 @@
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </section>
-    
-
-
-
-    <script src="assets/js/maquinaDeEscrever.js"></script>
-    <script src="assets/js/code.js"></script>
-    <script src="assets/js/habilidade.js"></script>
-    <script src="assets/js/menu.js"></script>
 </body>
 </html>

@@ -1,30 +1,33 @@
-
-#habilidades {
+#softSkills {
     background-color: #111010;
     padding: 80px 0px;
     height: auto;
+    padding: 0 150px;
 }
 
-.habi-descricao {
+
+
+.tituloHabilidades{
+  font-size: 2rem;
+  color: #c57e5f;
+  padding-top: 2rem;
+}
+
+.habilidades{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     color: #ccc;
+    padding-bottom: 60px;
     
 }
 
-.titulo-habilidades{
-    font-size: 2rem;
-    color: #c57e5f;
-}
-
-.conteiner-habi {
+.containerHabilidades {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    padding-left: 100px;
     padding-bottom: 60px;
     
 }
@@ -49,52 +52,52 @@
     transform: scale(1.05);
 }
 
-.conteiner-descricao {
+.descricao {
     width: 100%;
     max-width: 350px;
-    height: 220px;
+    height: 300px;
     font-size: 1rem;
     color: white;
-
 }
 
 .texto-descricao{
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 1.4rem;
+  text-align: center;
 }
 
-.ajustes2 {
-    padding: 0 150px;;
-}
-.ajustes2 h1 {
-    margin-bottom: 0;
-}
+
   
 @media (max-width: 850px) {
-    #habilidades .habi-descricao .habi-box {
-      height: auto;
-      width: auto;
-    }
-    #habilidades .habi-descricao .conteiner-descricao {
+    #softSkills .habilidades .containerHabilidades {
       height: 180px;
       width: 100%;
       max-width: 290px;
-      font-size: 1.7rem;
-      padding: 0px;
+    }
+
+    .descricao{
+      display: flex;
+      align-items: center;
+    }
+
+    .texto-descricao{
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 3rem 0 ;
     }
 
   }
   @media (max-width: 765px) {
-    #habilidades .habi-descricao {
+    #softSkills .habilidades {
       gap: 10px;
       padding: 80px 0;
     }
-    #habilidades .habi-descricao .habi-box {
+    #softSkills .habilidades .habi-box {
       height: 76px;
       width: 76px;
       
     }
-    #habilidades .habi-descricao .habi-descricao {
+    #softSkills .habilidades .habilidades {
       height: 160px;
       max-width: 260px;
       font-size: 1.8rem;
@@ -106,28 +109,24 @@
     
   }
   @media (max-width: 685px) {
-    #habilidades .habi-descricao {
+    #softSkills .habilidades {
       gap: 40px;
       flex-direction: column;
       width: 100%;
     }
       
     }
-    #habilidades .habi-box {
+    #softSkills .habi-box {
       height: 86px;
       width: 86px;
       
     }
-    #habilidades .conteiner-descricao {
+    #softSkills .descricao {
       max-width: 420px;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       
     }
 
-    .bootstrap{
-        width: 80px;
-    }
-
-    .conteiner-habi {
+    .containerHabilidades {
       padding: 0;
   }

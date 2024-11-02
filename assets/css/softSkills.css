@@ -130,3 +130,31 @@
     .containerHabilidades {
       padding: 0;
   }
+
+  @media (max-width: 466px) {
+    .containerHabilidades {
+      gap: 10px;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .habi-box {
+      height: 70px; 
+      width: 70px;
+      border-radius: 15px;
+    }
+  
+    .descricao {
+      max-width: 100%; 
+      text-align: center;
+      font-size: 1.2rem; 
+      padding: 0 10px; 
+    }
+  
+    .texto-descricao {
+      padding-top: 10px;
+      font-size: 1rem;
+    }
+  }
+  

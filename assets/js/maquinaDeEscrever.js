@@ -9,5 +9,5 @@ function ativaletra(elemento){
     })
 }
 
-const titulo = document.querySelector('.meuNome2');
+const titulo = document.querySelector('.subtitulo');
 ativaletra(titulo);
